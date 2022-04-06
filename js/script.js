@@ -9,10 +9,13 @@
  */
 function enterClicked() {
   // input
-  const street_name = document.getElementById("street-name").value
-  const street_number = parseInt(document.getElementById("street-number").value)
+  const fairenheight = document.getElementById("fairenheight").value
 
+
+   // process
+  const celcius = (("fairenheight" - 32) * 5 / 9)
+    
   // output
   document.getElementById("address").innerHTML =
-    "You live on: " + street_name + ", house " + street_number + "."
+    "That is " + celcius + "ᵒC" + street_number + "."
 }
