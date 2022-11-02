@@ -11,11 +11,10 @@ function enterClicked() {
   // input
   const fairenheight = document.getElementById("fairenheight").value
 
-
    // process
-  const celcius = (("fairenheight" - 32) * 5 / 9)
+  const celcius = ((fairenheight - 32) * 5 / 9)
     
   // output
-  document.getElementById("address").innerHTML =
-    "That is " + celcius + "ᵒC" + street_number + "."
+  document.getElementById("temp").innerHTML =
+    "That is " + celcius.toFixed(2) + " ᵒC."
 }
